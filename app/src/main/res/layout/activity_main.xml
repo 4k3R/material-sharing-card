@@ -1,4 +1,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none">
@@ -11,12 +13,14 @@
         android:paddingRight="@dimen/dimen_8dp"
         android:paddingTop="@dimen/activity_vertical_margin">
 
-        <android.support.v7.widget.CardView xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        <android.support.v7.widget.CardView
+            android:id="@+id/main_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            cardview:cardCornerRadius="@dimen/dimen_2dp"
-            cardview:cardElevation="@dimen/dimen_4dp"
-            cardview:cardUseCompatPadding="true">
+            app:cardCornerRadius="@dimen/dimen_2dp"
+            app:cardElevation="@dimen/dimen_4dp"
+            app:cardUseCompatPadding="true"
+            android:visibility="visible">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -38,7 +42,7 @@
                         android:src="@mipmap/image" />
 
                     <LinearLayout
-                        android:id="@+id/linearView"
+                        android:id="@+id/revealView"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:background="@color/twitter"
@@ -55,19 +59,21 @@
                             android:visibility="gone">
 
                             <Button
+                                android:id="@+id/duplicate"
                                 style="@style/Button"
                                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                                 android:text="@string/duplicate" />
 
                             <Button
+                                android:id="@+id/schedule"
                                 style="@style/Button"
                                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                                 android:text="@string/schedule" />
 
                             <Button
+                                android:id="@+id/delete"
                                 style="@style/Button"
                                 android:text="@string/delete" />
-
 
                         </LinearLayout>
 
@@ -105,7 +111,6 @@
                     android:textSize="@dimen/dimen_16sp"
                     android:textStyle="italic" />
 
-
                 <ImageButton
                     android:id="@+id/launchTwitterAnimation"
                     android:layout_width="@dimen/dimen_56dp"
@@ -115,14 +120,11 @@
                     android:layout_marginBottom="-28dp"
                     android:layout_marginEnd="@dimen/activity_vertical_margin"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/rounded_button"
+                    android:background="@drawable/background_transition"
                     android:contentDescription="@string/image"
-                    android:elevation="@dimen/dimen_4dp"
-                    android:onClick="launchTwitter"
-                    android:src="@mipmap/twitter_logo" />
+                    android:elevation="@dimen/dimen_4dp" />
 
             </RelativeLayout>
-
 
         </android.support.v7.widget.CardView>
 

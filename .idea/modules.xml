@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MaterialSharingCard.iml" filepath="$PROJECT_DIR$/MaterialSharingCard.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/material-sharing-card.iml" filepath="$PROJECT_DIR$/material-sharing-card.iml" />
     </modules>
   </component>
 </project>
