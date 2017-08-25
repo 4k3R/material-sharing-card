@@ -3,10 +3,8 @@
 
     <color name="colorPrimary">#F44336</color>
     <color name="colorPrimaryDark">#D32F2F</color>
-
     <color name="grey">#BEBEBE</color>
     <color name="twitter">#23C4FF</color>
-
     <color name="white">#FFFFFF</color>
 
 </resources>
